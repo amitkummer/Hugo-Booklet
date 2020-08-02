@@ -9,7 +9,7 @@
     "build:theme": "webpack --env.prod",
     "build:theme:debug": "webpack",
     "build:doc": "hugo --source doc --destination ../dist/doc",
-    "dev": "run-s build:theme dev:start",
+    "dev": "run-s build:theme:debug dev:start",
     "dev:start": "run-p dev:theme dev:demo",
     "dev:demo": "hugo serve --source demo --destination ../dist/demo --themesDir ../dist --layoutDir ../layouts",
     "dev:theme": "webpack -w --env.hot",
