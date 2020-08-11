@@ -10,9 +10,7 @@
     <title>{{ .Title }}</title>
   </head>
   <body>
-    <div class="container">
-      {{- block "main" . }}{{- end }}
-    <script src='{{ absURL "/main.js" }}'></script>
-    </div>
+    {{- block "main" . }}{{- end }}
+  </div>
   </body>
 </html>
