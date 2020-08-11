@@ -1,0 +1,24 @@
+p {
+  background-color: blueviolet;
+}
+
+.container {
+  @media only screen and (max-width: map-get($screen-breakpoints, 'mobile')) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: map-get($screen-widths, 'mobile');
+  }
+
+  @media only screen and (max-width: map-get($screen-breakpoints, 'tablet'))
+    and (min-width: (map-get($screen-breakpoints, 'mobile') + 1)) {
+    margin-left: auto;
+    margin-right: auto;
+    width: map-get($screen-widths, 'tablet');
+  }
+
+  @media only screen and (min-width: (map-get($screen-breakpoints, 'tablet') + 1)) {
+    margin-left: auto;
+    margin-right: auto;
+    width: map-get($screen-widths, 'desktop');
+  }
+}
