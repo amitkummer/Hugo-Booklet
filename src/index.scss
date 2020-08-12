@@ -1,12 +1,13 @@
 // Main stylesheet index.
 
+// Mixins
+@import 'mixins/responsive-block';
+
 // Theme Systemization
 @import 'theme/screens';
 @import 'theme/spaces';
 @import 'theme/colors';
-
-// Mixins
-@import 'mixins/responsive-block';
+@import 'theme/type';
 
 @import 'base/reset';
 
