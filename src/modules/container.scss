@@ -6,18 +6,18 @@ p {
   @include responsive-block('mobile') {
     margin-left: 1rem;
     margin-right: 1rem;
-    width: map-get($screen-widths, 'mobile');
+    max-width: map-get($screen-widths, 'mobile');
   }
 
   @include responsive-block('tablet') {
     margin-left: auto;
     margin-right: auto;
-    width: map-get($screen-widths, 'tablet');
+    max-width: map-get($screen-widths, 'tablet');
   }
 
   @include responsive-block('desktop') {
     margin-left: auto;
     margin-right: auto;
-    width: map-get($screen-widths, 'desktop');
+    max-width: map-get($screen-widths, 'desktop');
   }
 }
