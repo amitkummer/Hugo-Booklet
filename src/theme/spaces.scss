@@ -1,0 +1,15 @@
+@mixin create-space-variable($label, $value) {
+  --space-#{$label}: #{$value};
+  --space-n#{$label}: -#{$value};
+}
+
+:root {
+  @include create-space-variable('100', 0.5rem);
+  @include create-space-variable('200', 1rem);
+  @include create-space-variable('300', 1.5rem);
+  @include create-space-variable('400', 2rem);
+  @include create-space-variable('500', 4rem);
+  @include create-space-variable('600', 6rem);
+  @include create-space-variable('700', 8rem);
+  @include create-space-variable('800', 12rem);
+}

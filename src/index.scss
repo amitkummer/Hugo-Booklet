@@ -2,9 +2,13 @@
 
 // Theme Systemization
 @import 'theme/screens';
+@import 'theme/spaces';
+@import 'theme/colors';
 
 // Mixins
 @import 'mixins/responsive-block';
+
+@import 'base/reset';
 
 // Modules
 @import 'modules/container';
