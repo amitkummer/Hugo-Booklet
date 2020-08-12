@@ -1,0 +1,57 @@
+.navbar {
+  @extend %container;
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: var(--type-size-300);
+  justify-content: stretch;
+  min-height: var(--space-600);
+  
+  &-wrapper {
+    background-color: var(--color-primary-b500);
+  }
+
+  // Seperate:
+  // - Things that should be inside resposive blocks (depends on viewport).
+  // - CSS Properties that are common to all viewports.
+  &-navigation {
+    @include responsive-block('mobile') {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &-item {
+      @include responsive-block('mobile') {
+        margin-bottom: var(--space-100);
+        margin-top: var(--space-100);
+      }
+
+      color: var(--color-primary-f300);
+
+      &-active {
+        font-weight: bolder;
+
+        &::after {
+          @include responsive-block('mobile') {
+            padding-left: var(--space-100);
+            padding-right: var(--space-100);
+          }
+
+          content: '/';
+          font-size: var(--type-size-500);
+          padding-left: var(--space-200);
+          padding-right: var(--space-200);
+        }
+      }
+    }
+  }
+}

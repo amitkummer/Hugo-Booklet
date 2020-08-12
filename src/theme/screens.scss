@@ -1,11 +1,11 @@
 $screen-breakpoints: (
-  'mobile': 570px,
+  'mobile': 600px,
   'tablet': 990px,
   // 'desktop': above 990px
 );
 
 $screen-widths: (
-  'mobile': auto,
-  'tablet': 400px,
-  'desktop': 500px
+  'mobile': 100%,
+  'tablet': 550px,
+  'desktop': 750px
 );
