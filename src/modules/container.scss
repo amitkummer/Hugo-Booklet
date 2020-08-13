@@ -1,7 +1,3 @@
-p {
-  background-color: blueviolet;
-}
-
 %container {
   @include responsive-block('mobile') {
     margin-left: 1rem;
