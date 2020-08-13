@@ -8,10 +8,15 @@
 @import 'theme/spaces';
 @import 'theme/colors';
 @import 'theme/type';
+@import 'theme/headings';
 
+// Base
 @import 'base/reset';
 
 // Modules
-@import 'modules/container';
+@import 'modules/article';
 @import 'modules/footer';
 @import 'modules/navbar';
+
+// Layout
+@import 'layout/container';
