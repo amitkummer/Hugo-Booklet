@@ -1,11 +1,13 @@
 {{ define "main" }}
 <nav>
-  <ul>
-    {{ range .Pages }}
-    <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
-    {{ end }}
-  </ul>
+  <div class="posts-wrapper">
+    <ul class="posts">
+      {{ range .Pages }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
 </nav>
 {{ end }}

@@ -1,0 +1,12 @@
+.posts {
+  list-style: none;
+  margin: var(--space-500) 0;
+  padding: 0;
+
+  &-wrapper {
+    @extend %container;
+
+    display: flex;
+    justify-content: start;
+  }
+}
