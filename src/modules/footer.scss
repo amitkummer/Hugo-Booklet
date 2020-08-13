@@ -5,12 +5,12 @@
   &-container {
     @extend %container;
 
-    @include responsive-block("mobile") {
+    @include responsive-block('mobile') {
       grid-template-columns: 1fr;
       justify-items: center;
     }
 
-    @include responsive-block("tablet") {
+    @include responsive-block('tablet') {
       column-gap: var(--space-800);
     }
 
@@ -21,10 +21,10 @@
   }
 
   &-about {
-    @include responsive-block("mobile") {
+    @include responsive-block('mobile') {
+      align-items: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
       margin: var(--space-500) 0;
     }
 
@@ -34,15 +34,16 @@
     }
 
     &-text {
-      color: var(--color-primary-f300);
-      @include responsive-block("mobile") {
+      @include responsive-block('mobile') {
         margin: 0 var(--space-700);
       }
+
+      color: var(--color-primary-f300);
     }
   }
 
   &-navigation {
-    @include responsive-block("mobile") {
+    @include responsive-block('mobile') {
       margin: var(--space-500) 0;
     }
 
