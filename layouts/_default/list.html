@@ -3,9 +3,28 @@
   <div class="posts-wrapper">
     <ul class="posts">
       {{ range .Pages }}
-      <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </li>
+      <ul class="posts-single">
+        <li class="posts-single-title">
+          <a href="{{ .Permalink }}">
+            {{ .Title }}
+          </a>
+        </li>
+        <ul class="posts-single-metadata">
+          <li class="posts-single-metadata-date">
+            {{ .Date.Format "01-02-2006" }}
+          </li>
+          <li class="posts-single-metadata-tag">
+            <a href="raz">
+              tag-name
+            </a>
+          </li>
+        </ul>
+        <li class="posts-single-summary">
+          <p>
+            {{ .Summary }}
+          </p>
+        </li>
+      </ul>
       {{ end }}
     </ul>
   </div>
