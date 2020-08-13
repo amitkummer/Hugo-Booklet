@@ -1,11 +1,12 @@
 :root {
   --type-size-200: 16px;
   --type-size-300: 20px;
-  --type-size-500: 24px;
-  --type-size-600: 30px;
-  --type-size-700: 34px;
-  --type-size-800: 40px;
+  --type-size-400: 24px;
+  --type-size-500: 30px;
+  --type-size-600: 34px;
+  --type-size-700: 40px;
 
+  // Change values someday.
   @include responsive-block('mobile') {
     --type-size-500: 22px;
     --type-size-600: 24px;
