@@ -1,0 +1,37 @@
+.section {
+  list-style: none;
+  margin: var(--space-500) 0;
+  max-width: 400px;
+  padding: 0;
+
+  li {
+    margin: var(--space-100) 0;
+  }
+
+  &-title {
+    a {
+      font-size: var(--type-size-300);
+      font-weight: var(--type-weight-500);
+      text-decoration: none;
+    }
+  }
+
+  &-summary {
+    p {
+      font-weight: 300;
+      margin-top: 0;
+    }
+  }
+
+  &-posts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-all {
+    a {
+      font-weight: var(--type-weight-500);
+    }
+  }
+}
