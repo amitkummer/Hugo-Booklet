@@ -1,3 +1,32 @@
 {{ define "main" }}
-content
+<nav class="sectionview">
+  {{ range .Sections }}
+  <ul class="section">
+    <li class="section-title">
+      <a href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+    </li>
+    <li class="section-summary">
+      <p>
+        {{ .Summary }}
+      </p>
+    </li>
+    <ul class="section-posts">
+      {{ range first 4 .Pages }}
+        <li>
+          <a href="{{ .Permalink }}">
+            {{ .Title }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+    <li class="section-all">
+      <a href="{{ .Permalink }}">
+        see all
+      </a>
+    </li>
+  </ul>
+  {{ end }}
+</nav>
 {{ end }}
