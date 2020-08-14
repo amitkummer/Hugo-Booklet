@@ -4,7 +4,6 @@
 @import 'mixins/responsive-block';
 
 // Theme Systemization
-@import 'theme/anchor';
 @import 'theme/screens';
 @import 'theme/spaces';
 @import 'theme/colors';
@@ -13,6 +12,7 @@
 @import 'theme/weights';
 
 // Base
+@import 'base/anchor';
 @import 'base/reset';
 @import 'base/type';
 @import 'base/site';
