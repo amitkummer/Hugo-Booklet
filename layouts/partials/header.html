@@ -2,14 +2,22 @@
   <nav class='navbar'>
     <ul class='navbar-navigation'>
       <li class='navbar-navigation-item navbar-navigation-item-active'>
-        <a href={{ .Site.BaseURL }}>Site Name</a>
+        <a href={{ .Site.BaseURL }}>Home</a>
       </li>
-      <li class='navbar-navigation-item navbar-navigation-item-active'>
-        Section Name!
-      </li>
+      {{ if eq .Kind "section" }}
       <li class='navbar-navigation-item'>
-        Current article name very lonk
+        {{ .Title }}
       </li>
+      {{ else if eq .Kind "page" }}
+        <li class='navbar-navigation-item navbar-navigation-item-active'>
+          <a href="{{ .CurrentSection.Permalink }}">
+            {{ .CurrentSection.Title }}
+          </a>
+        </li>
+        <li class='navbar-navigation-item'>
+          {{ .Title }}
+        </li>
+      {{end}}
     </ul>
   </nav>
 </header>
