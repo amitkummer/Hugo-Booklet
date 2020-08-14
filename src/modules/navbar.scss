@@ -38,7 +38,10 @@
       color: var(--color-primary-f300);
 
       &-active {
-        font-weight: bold;
+        a {
+          color: var(--color-primary-f300);
+          font-weight: var(--type-weight-600);
+        }
 
         &::after {
           @include responsive-block('mobile') {
