@@ -14,7 +14,8 @@
     &-title {
       a {
         font-size: var(--type-size-300);
-        font-weight: bold;
+        font-style: oblique 5deg;
+        font-weight: 600;
         text-decoration: none;
       }
     }
@@ -37,7 +38,11 @@
     }
 
     &-summary {
-      color: green;
+      p {
+        color: var(--color-accent-f500);
+        margin-bottom: 0;
+        margin-top: var(--space-100);
+      }
     }
   }
 
