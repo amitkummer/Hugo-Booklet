@@ -24,6 +24,7 @@
       display: flex;
       flex-direction: row;
       font-size: var(--type-size-200);
+      font-weight: var(--type-weight-400);
       list-style: none;
       margin: 0;
       padding: 0;
@@ -33,7 +34,7 @@
       }
 
       &-tag {
-        color: grey;
+        margin-right: var(--space-200);
       }
     }
 
