@@ -1,20 +1,25 @@
 h1 {
-  font-size: var(--space-400);
+  font-size: var(--type-size-500);
   margin-bottom: var(--space-200);
   margin-top: var(--space-400);
 }
 
 h2 {
-  font-size: var(--space-300);
+  font-size: var(--type-size-400);
   margin-bottom: var(--space-200);
   margin-top: var(--space-400);
 }
 
-h3,
+h3 {
+  font-size: var(--type-size-300);
+  margin-bottom: var(--space-200);
+  margin-top: var(--space-300);  
+}
+
 h4,
 h5,
 h6 {
-  font-size: var(--space-300);
+  font-size: var(--type-size-200);
   margin-bottom: var(--space-200);
   margin-top: var(--space-300);
 }
