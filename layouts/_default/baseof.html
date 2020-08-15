@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="{{ absURL "/main.css" }}">
     <title>{{ .Title }}</title>
   </head>
-  <body>
-    {{ partial "header.html" . }}
-    {{- block "main" . }}{{- end }}
-    {{ partial "footer.html" . }}
+  <body class="pagewrapper">
+    <div class="pagewrapper-header">
+      {{ partial "header.html" . }}
+    </div>
+    <div class="pagewrapper-main">
+      {{- block "main" . }}{{- end }}
+    </div>
+    <div class="pagewrapper-footer">
+      {{ partial "footer.html" . }}
+    </div>
   </div>
   </body>
 </html>
