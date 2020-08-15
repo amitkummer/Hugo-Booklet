@@ -11,7 +11,7 @@
       {{ else if eq .Kind "page" }}
         <li class='navbar-navigation-item navbar-navigation-item-active'>
           <a href="{{ .CurrentSection.Permalink }}">
-            {{ .CurrentSection.Title }}
+            {{- .CurrentSection.Title -}}
           </a>
         </li>
         <li class='navbar-navigation-item'>
