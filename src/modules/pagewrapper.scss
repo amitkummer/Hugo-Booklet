@@ -1,0 +1,17 @@
+.pagewrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-header {
+    flex-basis: 100%;
+  }
+
+  &-main {
+    flex-grow: 1;
+    min-height: 850px;
+  }
+
+  &-footer {
+    flex-basis: 100%;
+  }
+}
