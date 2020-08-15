@@ -54,13 +54,20 @@
 
     &-list {
       font-size: var(--type-size-300);
-      font-weight: bolder;
+      font-weight: var(--type-weight-600);
       list-style: none;
       margin: 0;
       padding: 0;
 
       &-item {
         margin: var(--space-200) 0;
+
+        &-active {
+          color: var(--color-primary-f400);
+          font-style: oblique var(--font-style-200);
+          font-weight: var(--type-weight-600);
+          text-decoration: underline;
+        }
       }
     }
   }

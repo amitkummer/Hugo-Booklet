@@ -16,9 +16,17 @@
         Navigation
       </h1>
       <ul class="footer-navigation-list">
+        <li class="footer-navigation-list-item">
+          <a href="{{ .Site.Home.Permalink }}" class="footer-navigation-list-item-active">
+            Home
+          </a>
+        </li>
+        <li class="footer-navigation-list-item">
+          <a href="{{ .CurrentSection.Permalink }}" class="footer-navigation-list-item-active">
+            {{ .CurrentSection.Title }}
+          </a>
+        </li>
         <li class="footer-navigation-list-item">Github</li>
-        <li class="footer-navigation-list-item">Home</li>
-        <li class="footer-navigation-list-item">Section List</li>
       </ul>
     </nav>
   </div>
