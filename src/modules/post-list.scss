@@ -33,8 +33,15 @@
         margin-right: var(--space-200);
       }
 
-      &-tag {
-        margin-right: var(--space-200);
+      &-tags {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        &-single {
+          margin-right: var(--space-200);
+        }
       }
     }
 

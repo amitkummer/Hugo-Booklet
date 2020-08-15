@@ -13,11 +13,13 @@
           <li class="posts-single-metadata-date">
             {{ .Date.Format "01-02-2006" }}
           </li>
-          <li class="posts-single-metadata-tag">
-            <a href="raz">
-              tag-name
-            </a>
-          </li>
+          <ul class="posts-single-metadata-tags">
+            {{ range first 2 (.GetTerms "categories") }}
+              <li class="posts-single-metadata-tags-single">
+                <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+              </li>
+            {{ end }}
+          </ul>
         </ul>
         <li class="posts-single-summary">
           <p>
