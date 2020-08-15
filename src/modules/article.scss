@@ -4,6 +4,37 @@
   margin-top: var(--space-400);
   max-width: 600px;
 
+  &-title {
+    margin-bottom: 0;
+    margin-top: var(--space-300);
+  }
+
+  &-metadata {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--type-size-200);
+    font-weight: var(--type-weight-400);
+    list-style: none;
+    margin-bottom: var(--space-400);
+    margin-top: 0;
+    padding: 0;
+
+    &-date {
+      margin-right: var(--space-200);
+    }
+    
+    &-categories {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      &-single {
+        margin-right: var(--space-200);
+      }
+    }
+  }
+
   &-wrapper {
     @extend %container;
 
