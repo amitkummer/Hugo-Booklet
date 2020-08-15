@@ -6,4 +6,4 @@ aliases = ["about-us","about-hugo","contact"]
 author = "You"
 +++
 
-Woah! There is a customizeable 'about' section. This section should be about 2 -3 secntences long but the theme handles 'about' sections of any length just right. 
+Woah! There is a customizeable 'about' section. This section should be about 2 -3 secntences long but the theme handles 'about' sections of any length just right.
