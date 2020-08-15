@@ -4,22 +4,22 @@
       <h1 class="footer-about-title">
         About
       </h1>
-      <p class="footer-about-text">
+      <span class="footer-about-text">
         {{ with .Site.GetPage "/about" }}{{ .Content }}{{ end }}
-      </p>
+      </span>
     </section>
     <nav class="footer-navigation">
       <h1 class="footer-navigation-title">
         Navigation
       </h1>
-      <ul class="footer-navigation-list">
+      <ul class="footer-navigation-list footer-navigation-list-item-active">
         <li class="footer-navigation-list-item">
-          <a href="{{ .Site.Home.Permalink }}" class="footer-navigation-list-item-active">
+          <a href="{{ .Site.Home.Permalink }}">
             Home
           </a>
         </li>
-        <li class="footer-navigation-list-item">
-          <a href="{{ .CurrentSection.Permalink }}" class="footer-navigation-list-item-active">
+        <li class="footer-navigation-list-item footer-navigation-list-item-active">
+          <a href="{{ .CurrentSection.Permalink }}">
             {{ .CurrentSection.Title }}
           </a>
         </li>
