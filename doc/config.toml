@@ -1,5 +1,5 @@
 baseURL = ""
-title = "Hugo Theme Pack"
+title = "webpack-mdnb"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
