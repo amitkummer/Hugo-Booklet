@@ -65,7 +65,7 @@
         margin: var(--space-200) 0;
 
         &-active {
-          a {
+          > a {
             color: var(--color-primary-f300);
             font-style: oblique var(--font-style-200);
             font-weight: var(--type-weight-400);

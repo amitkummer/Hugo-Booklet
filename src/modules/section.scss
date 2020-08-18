@@ -7,7 +7,7 @@
   &-title {
     margin-bottom: 0;
 
-    a {
+    > a {
       font-size: var(--type-size-300);
       font-weight: var(--type-weight-500);
       margin-bottom: 0;
@@ -35,7 +35,7 @@
   &-seeall {
     margin-top: var(--space-100);
 
-    a {
+    > a {
       font-weight: var(--type-weight-500);
     }
   }
