@@ -32,12 +32,12 @@ module.exports = (env) => {
     },
     plugins: [
       // Copies files to the dist/theme folder.
-      new CopyPlugin(
-        [
+      new CopyPlugin({
+        patterns: [
           !isHotReload && { from: 'layouts', to: 'theme/layouts' },
           { from: 'public', to: 'theme' }
         ].filter(Boolean)
-      ),
+      }),
       // Extracts a CSS file.
       new MiniCssExtractPlugin({
         filename: 'theme/static/[name].css'
