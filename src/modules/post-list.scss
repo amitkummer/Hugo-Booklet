@@ -46,11 +46,9 @@
     }
 
     &-summary {
-      > p {
-        color: var(--color-accent-f500);
-        margin-bottom: 0;
-        margin-top: var(--space-100);
-      }
+      color: var(--color-accent-f500);
+      margin-bottom: 0;
+      margin-top: var(--space-100);
     }
   }
 
