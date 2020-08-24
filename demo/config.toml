@@ -10,6 +10,11 @@ footnoteReturnLinkContents = "^"
 
 theme = "mdnb"
 
+[params]
+  [params.footer]
+    title = "About"
+    text = "Woah! There is a customizeable 'about' section. This section should be about 2 -3 secntences long but the theme handles 'about' sections of any length just right."
+
 [menu]
 
   [[menu.main]]

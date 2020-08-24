@@ -1,13 +1,18 @@
 <footer class="footer">
   <div class="footer-container">
-    <section class="footer-about">
+    <div class="footer-about">
+      {{ with .Site.Params.footer.title }}
       <h1 class="footer-about-title">
-        About
+        {{ . }}
       </h1>
-      <span class="footer-about-text">
-        {{ with .Site.GetPage "/about" }}{{ .Content }}{{ end }}
-      </span>
-    </section>
+      {{ end }}
+      {{ with .Site.Params.footer.text }}
+      <p class="footer-about-text">
+        {{ . }}
+      </p>
+      {{ end }}
+    </div>
+    
     <nav class="footer-navigation">
       <h1 class="footer-navigation-title">
         Navigation
