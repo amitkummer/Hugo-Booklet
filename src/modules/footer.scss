@@ -1,10 +1,6 @@
 .footer {
   background-color: var(--color-primary-b500);
   color: var(--color-primary-f400);
-  
-  &-container {
-    @extend %footer-container
-  }
 
   &-about-title {
     font-size: var(--type-size-300);
