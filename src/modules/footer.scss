@@ -25,30 +25,14 @@
     margin-bottom: var(--space-400);
   }
 
-  &-navigation {
-    @include responsive-block('mobile') {
-      margin: var(--space-500) 0;
-    }
+  &-navigation-links {
+    grid-area: nav-links;
 
-    &-links {
-      font-size: var(--type-size-200);
+    &-item {
+      display: block;
       font-weight: var(--type-weight-400);
-      grid-area: nav-links;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      &-item {
-        display: block;
-        margin-bottom: var(--space-200);
-        color: var(--color-primary-f300);
-
-        &-active {
-          font-style: oblique var(--font-style-200);
-          font-weight: var(--type-weight-400);
-          text-decoration: underline;
-        }
-      }
+      margin-bottom: var(--space-200);
+      color: var(--color-primary-f300);
     }
   }
 }
