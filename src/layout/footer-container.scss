@@ -1,4 +1,4 @@
-.footer-container {
+%footer-container {
   @include responsive-block('mobile') {
     grid-template-areas: "about-title"
                          "about-text"
