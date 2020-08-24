@@ -15,15 +15,15 @@
     <h1 class="footer-navigation-title">
       Navigation
     </h1>
-    
-    <nav class="footer-navigation">
-      <a href="{{ .Site.Home.Permalink }}" class="footer-navigation-list-item footer-navigation-list-item-active">
+
+    <nav class="footer-navigation-links">
+      <a href="{{ .Site.Home.Permalink }}" class="footer-navigation-links-item footer-navigation-links-item-active">
         Home
       </a>
-      <a href="{{ .CurrentSection.Permalink }}" class="footer-navigation-list-item footer-navigation-list-item-active">
+      <a href="{{ .CurrentSection.Permalink }}" class="footer-navigation-links-item footer-navigation-links-item-active">
         {{ .CurrentSection.Title }}
       </a>
-      <a class="footer-navigation-list-item">
+      <a class="footer-navigation-links-item">
         Github
       </a>
     </nav>

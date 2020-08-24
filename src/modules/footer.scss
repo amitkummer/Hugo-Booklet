@@ -2,45 +2,27 @@
   background-color: var(--color-primary-b500);
   color: var(--color-primary-f400);
 
-  &-container {
-    @extend %container;
-
-    @include responsive-block('mobile') {
-      grid-template-columns: 1fr;
-      justify-items: center;
-    }
-
-    @include responsive-block('tablet') {
-      column-gap: var(--space-800);
-    }
-
-    column-gap: var(--space-900);
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: var(--space-500) 0;
+  &-about-title {
+    font-size: var(--type-size-300);
+    font-weight: var(--type-weight-400);
+    grid-area: about-title;
+    margin-bottom: var(--space-400);
   }
 
-  &-about {
+  &-about-text {
     @include responsive-block('mobile') {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: var(--space-500) 0;
+      margin: 0 var(--space-700);
     }
 
-    &-title {
-      font-size: var(--type-size-300);
-      font-weight: var(--type-weight-400);
-      margin-bottom: var(--space-400);
-    }
+    color: var(--color-primary-f300);
+    grid-area: about-text;
+  }
 
-    &-text {
-      @include responsive-block('mobile') {
-        margin: 0 var(--space-700);
-      }
-
-      color: var(--color-primary-f300);
-    }
+  &-navigation-title {
+    font-size: var(--type-size-300);
+    font-weight: var(--type-weight-400);
+    grid-area: nav-title;
+    margin-bottom: var(--space-400);
   }
 
   &-navigation {
@@ -48,29 +30,23 @@
       margin: var(--space-500) 0;
     }
 
-    &-title {
-      font-size: var(--type-size-300);
-      font-weight: var(--type-weight-400);
-      margin-bottom: var(--space-400);
-    }
-
-    &-list {
+    &-links {
       font-size: var(--type-size-200);
       font-weight: var(--type-weight-400);
+      grid-area: nav-links;
       list-style: none;
       margin: 0;
       padding: 0;
 
       &-item {
-        margin: var(--space-200) 0;
+        display: block;
+        margin-bottom: var(--space-200);
+        color: var(--color-primary-f300);
 
         &-active {
-          > a {
-            color: var(--color-primary-f300);
-            font-style: oblique var(--font-style-200);
-            font-weight: var(--type-weight-400);
-            text-decoration: underline;
-          }
+          font-style: oblique var(--font-style-200);
+          font-weight: var(--type-weight-400);
+          text-decoration: underline;
         }
       }
     }
