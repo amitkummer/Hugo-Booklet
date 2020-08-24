@@ -1,9 +1,10 @@
 .l-footer-grid {
   @include responsive-block('mobile') {
-    grid-template-areas: "about-title"
-                         "about-text"
-                         "nav-title"
-                         "nav-links";
+    grid-template-areas:
+      'about-title'
+      'about-text'
+      'nav-title'
+      'nav-links';
     grid-template-columns: 1fr;
     justify-items: center;
   }
@@ -14,8 +15,9 @@
 
   column-gap: var(--space-900);
   display: grid;
+  grid-template-areas:
+    'about-title nav-title'
+    'about-text nav-links';
   grid-template-columns: 2fr 1fr;
-  grid-template-areas: "about-title nav-title"
-                       "about-text nav-links";
   padding: var(--space-500) 0;
 }

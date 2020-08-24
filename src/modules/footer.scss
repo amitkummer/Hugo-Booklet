@@ -29,10 +29,10 @@
     grid-area: nav-links;
 
     &-item {
+      color: var(--color-primary-f300);
       display: block;
       font-weight: var(--type-weight-400);
       margin-bottom: var(--space-200);
-      color: var(--color-primary-f300);
     }
   }
 }
