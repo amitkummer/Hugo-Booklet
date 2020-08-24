@@ -36,8 +36,6 @@
   }
 
   &-wrapper {
-    @extend %container;
-
     display: flex;
     justify-content: start;
   }
