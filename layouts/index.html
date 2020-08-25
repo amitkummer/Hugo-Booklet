@@ -8,14 +8,22 @@
     <p class="section-summary">
       {{ .Summary }}
     </p>
-    {{ range first 4 .Pages }}
-    <a href="{{ .Permalink }}" class="section-post">
-      {{ .Title }}
-    </a>
-    {{ end }}
-    <a href="{{ .Permalink }}" class="section-seeall">
-      see all
-    </a>
+    <nav>
+      <ul class="section-posts">
+      {{ range first 4 .Pages }}
+      <li>
+        <a href="{{ .Permalink }}">
+          {{ .Title }}
+        </a>
+      </li>
+      {{ end }}
+      <li class="section-seeall-wrapper">
+        <a href="{{ .Permalink }}" class="section-seeall">
+          see all
+        </a>
+      </li>
+      </ul>
+    </nav>
   </div>
   {{ end }}
 </div>

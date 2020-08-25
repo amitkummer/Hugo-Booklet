@@ -14,14 +14,17 @@
     margin-top: 0;
   }
 
-  &-post {
-    display: block;
-    margin: var(--sapce-200) 0;
+  &-posts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
-
+  
   &-seeall {
-    display: block;
     font-weight: var(--type-weight-500);
-    margin-top: var(--space-100);
+
+    &-wrapper {
+      margin-top: var(--space-100);
+    }
   }
 }
