@@ -1,34 +1,26 @@
 {{ define "main" }}
 <nav>
-  <div class="posts-wrapper l-container">
-    <ul class="posts">
-      {{ range .Pages }}
-      <ul class="posts-single">
-        <div>
-          <a href="{{ .Permalink }}" class="posts-single-title">
-            {{ .Title }}
-          </a>
-        </div>
-        <ul class="posts-single-metadata">
-          <li class="posts-single-metadata-date">
-            {{ .Date.Format "01-02-2006" }}
-          </li>
-          <ul class="posts-single-metadata-tags">
-            {{ range first 2 (.GetTerms "categories") }}
-              <li class="posts-single-metadata-tags-single">
-                <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-              </li>
-            {{ end }}
-          </ul>
-        </ul>
-        <li class="posts-single-summary">
-          <p>
-            {{ .Summary }}
-          </p>
-        </li>
-      </ul>
+  <div class="posts l-container">
+    {{ range .Pages }}
+    <div class="posts-single">
+      <div>
+        <a href="{{ .Permalink }}" class="posts-single-title">
+          {{ .Title }}
+        </a>
+      </div>
+      <span class="posts-single-date">
+        {{ .Date.Format "01-02-2006" }}
+      </span>
+      {{ range first 2 (.GetTerms "categories") }}
+        <a href="{{ .Permalink }}" class="posts-single-tag">
+          {{- .LinkTitle -}}
+        </a>
       {{ end }}
-    </ul>
+      <p class="posts-single-summary">
+        {{ .Summary }}
+      </p>
+    </div>
+    {{ end }}
   </div>
 </nav>
 {{ end }}

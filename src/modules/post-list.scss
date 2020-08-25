@@ -1,15 +1,12 @@
 .posts {
-  list-style: none;
-  margin: var(--space-400) 0 var(--space-500) 0;
+  margin: var(--space-500) 0 var(--space-500) 0;
   max-width: 500px;
   padding: 0;
 
   // Single post
   &-single {
-    list-style: none;
     margin-bottom: var(--space-500);
     margin-top: var(--space-400);
-    padding: 0;
 
     &-title {
       font-size: var(--type-size-300);
@@ -18,29 +15,12 @@
       text-decoration: none;
     }
 
-    &-metadata {
-      display: flex;
-      flex-direction: row;
-      font-size: var(--type-size-200);
-      font-weight: var(--type-weight-400);
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    &-date {
+      margin-right: var(--space-200);
+    }
 
-      &-date {
-        margin-right: var(--space-200);
-      }
-
-      &-tags {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        &-single {
-          margin-right: var(--space-200);
-        }
-      }
+    &-tag {
+      margin-right: var(--space-200);
     }
 
     &-summary {
@@ -48,10 +28,5 @@
       margin-bottom: 0;
       margin-top: var(--space-100);
     }
-  }
-
-  &-wrapper {
-    display: flex;
-    justify-content: start;
   }
 }
