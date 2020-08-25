@@ -4,11 +4,11 @@
     <ul class="posts">
       {{ range .Pages }}
       <ul class="posts-single">
-        <li class="posts-single-title">
-          <a href="{{ .Permalink }}">
+        <div>
+          <a href="{{ .Permalink }}" class="posts-single-title">
             {{ .Title }}
           </a>
-        </li>
+        </div>
         <ul class="posts-single-metadata">
           <li class="posts-single-metadata-date">
             {{ .Date.Format "01-02-2006" }}
