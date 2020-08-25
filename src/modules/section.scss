@@ -1,42 +1,27 @@
 .section {
-  list-style: none;
-  margin: 0 0 var(--space-500) 0;
+  margin: var(--space-400) 0 var(--space-500) 0;
   max-width: 400px;
-  padding: 0;
 
   &-title {
+    font-size: var(--type-size-300);
+    font-weight: var(--type-weight-500);
     margin-bottom: 0;
-
-    > a {
-      font-size: var(--type-size-300);
-      font-weight: var(--type-weight-500);
-      margin-bottom: 0;
-      text-decoration: none;
-    }
+    text-decoration: none;
   }
 
   &-summary {
-    p {
-      font-weight: 300;
-      margin-top: 0;
-    }
+    font-weight: 300;
+    margin-top: 0;
   }
 
-  &-posts {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    &-single {
-      margin: var(--sapce-200) 0;
-    }
+  &-posts-single {
+    display: block;
+    margin: var(--sapce-200) 0;
   }
 
   &-seeall {
+    display: block;
+    font-weight: var(--type-weight-500);
     margin-top: var(--space-100);
-
-    > a {
-      font-weight: var(--type-weight-500);
-    }
   }
 }
