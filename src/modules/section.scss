@@ -21,10 +21,10 @@
   }
   
   &-seeall {
-    font-weight: var(--type-weight-500);
+    margin-top: var(--space-100);
 
-    &-wrapper {
-      margin-top: var(--space-100);
+    &-link {
+      font-weight: var(--type-weight-500);
     }
   }
 }
