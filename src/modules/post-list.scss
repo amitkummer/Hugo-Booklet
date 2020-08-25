@@ -1,11 +1,10 @@
 .posts {
-  margin: var(--space-500) 0 var(--space-600) 0;
+  margin-bottom: var(--space-600);
   padding: 0;
 
   // Single post
   &-single {
     margin-bottom: var(--space-500);
-    margin-top: var(--space-400);
 
     &-title {
       font-size: var(--type-size-300);

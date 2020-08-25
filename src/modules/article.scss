@@ -1,12 +1,9 @@
 .article {
   color: var(--color-accent-f500);
-  margin-bottom: var(--space-600);
-  margin-top: var(--space-300);
   max-width: 600px;
 
   &-title {
-    margin-bottom: 0;
-    margin-top: var(--space-300);
+    margin: 0;
   }
 
   &-metadata {
@@ -38,5 +35,6 @@
   &-wrapper {
     display: flex;
     justify-content: start;
+    margin-bottom: var(--space-600);
   }
 }
