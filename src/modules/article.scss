@@ -4,37 +4,22 @@
 
   &-title {
     margin: 0;
+    padding: 0;
   }
 
-  &-metadata {
-    display: flex;
-    flex-direction: row;
-    font-size: var(--type-size-200);
-    font-weight: var(--type-weight-400);
-    list-style: none;
+  &-date {
+    margin-right: var(--space-200);
+  }
+
+  &-category {
+    margin-right: var(--space-200);
+  }
+
+  &-meta {
     margin-bottom: var(--space-300);
-    margin-top: 0;
-    padding: 0;
-
-    &-date {
-      margin-right: var(--space-200);
-    }
-
-    &-categories {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      &-single {
-        margin-right: var(--space-200);
-      }
-    }
   }
 
   &-wrapper {
-    display: flex;
-    justify-content: start;
     margin-bottom: var(--space-600);
   }
 }
