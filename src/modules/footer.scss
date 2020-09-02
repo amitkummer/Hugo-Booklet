@@ -11,14 +11,20 @@
 
   &-about-text {
     @include responsive-block('mobile') {
-      margin: 0 var(--space-700);
+      margin: 0 var(--space-400);
     }
-
+    
+    margin-top: var(--space-100);
     color: var(--color-primary-f300);
     grid-area: about-text;
   }
 
   &-navigation-title {
+    @include responsive-block('mobile') {
+      margin-bottom: var(--space-200);
+      margin-top: var(--space-500);
+    }
+    
     font-size: var(--type-size-300);
     font-weight: var(--type-weight-400);
     grid-area: nav-title;
@@ -29,6 +35,10 @@
     grid-area: nav-links;
 
     &-item {
+      @include responsive-block('mobile') {
+        margin-bottom: var(--space-100);
+      }
+
       color: var(--color-primary-f300);
       display: block;
       font-weight: var(--type-weight-400);
