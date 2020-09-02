@@ -13,10 +13,10 @@
     @include responsive-block('mobile') {
       margin: 0 var(--space-400);
     }
-    
-    margin-top: var(--space-100);
+
     color: var(--color-primary-f300);
     grid-area: about-text;
+    margin-top: var(--space-100);
   }
 
   &-navigation-title {
@@ -24,7 +24,7 @@
       margin-bottom: var(--space-200);
       margin-top: var(--space-500);
     }
-    
+
     font-size: var(--type-size-300);
     font-weight: var(--type-weight-400);
     grid-area: nav-title;
