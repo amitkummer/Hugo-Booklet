@@ -1,9 +1,9 @@
 <footer class="footer">
   <div class="l-footer-grid l-container">
     {{ with .Site.Params.footer.title }}
-    <h1 class="footer-about-title">
+    <div class="footer-about-title">
       {{ . }}
-    </h1>
+    </div>
     {{ end }}
     {{ with .Site.Params.footer.text }}
 
@@ -12,9 +12,9 @@
     </p>
     {{ end }}  
 
-    <h1 class="footer-navigation-title">
+    <div class="footer-navigation-title">
       Navigation
-    </h1>
+    </div>
 
     <nav class="footer-navigation-links">
       <a href="{{ .Site.Home.Permalink }}" class="footer-navigation-links-item">
