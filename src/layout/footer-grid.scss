@@ -7,10 +7,15 @@
       'nav-links';
     grid-template-columns: 1fr;
     justify-items: center;
+    padding: var(--space-300) 0;
   }
 
   @include responsive-block('desktop') {
     column-gap: var(--space-800);
+  }
+
+  @include responsive-block('tablet') {
+    column-gap: var(--space-600);
   }
 
   column-gap: var(--space-900);
