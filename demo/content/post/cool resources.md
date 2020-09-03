@@ -11,6 +11,6 @@ Here is a list of some cool resources for learning Javascript. It features books
 - [The Modern JavaSscript Tutorial](https://javascript.info/). Another free online js book.
 
 - [15 docker best practices with nodejs](https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4).
-Written by a dude from Israel.
+  Written by a dude from Israel.
 
 - [this is more complicated than you think](https://ibb.co/gPyCmQw). Cool chart for 'this' in all contexts.
