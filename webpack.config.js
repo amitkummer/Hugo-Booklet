@@ -43,7 +43,9 @@ module.exports = (env) => {
         filename: 'theme/static/[name].css'
       }),
       // Lint during build.
-      new ESLintPlugin(),
+      new ESLintPlugin({
+        files: ['src/*.js', '*.js']
+      }),
       new StylelintPlugin({
         syntax: 'scss'
       })

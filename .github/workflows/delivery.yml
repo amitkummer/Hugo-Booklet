@@ -1,0 +1,112 @@
+name: Delivery
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - name: Install Dependencies
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+  release:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - name: Install Dependencies
+        run: npm ci
+      - name: Set theme_name
+        run: |
+          theme_name="$(node --print 'require("./package.json").name')"
+          echo "::set-env name=theme_name::${theme_name}"
+      - name: Build Release Artifacts
+        run: |
+          npm run build:theme
+          mv dist/theme "dist/${theme_name}"
+      - name: Archive Release Artifacts
+        run: |
+          cp --recursive demo dist/site
+          mkdir dist/site/themes
+          cp --recursive "dist/${theme_name}" dist/site/themes
+          cd dist
+          zip --recurse-paths "${theme_name}.zip" "${theme_name}"
+          tar --create --gzip --file "${theme_name}.tar.gz" "${theme_name}"
+          zip --recurse-paths quickstart-site.zip site
+          tar --create --gzip --file quickstart-site.tar.gz site
+      - name: Create Release
+        id: release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+      - name: Upload Zip Theme Archive
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: dist/${{ env.theme_name }}.zip
+          asset_name: ${{ env.theme_name }}.zip
+          asset_content_type: application/zip
+      - name: Upload Tar Theme Archive
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: dist/${{ env.theme_name }}.tar.gz
+          asset_name: ${{ env.theme_name }}.tar.gz
+          asset_content_type: application/gzip
+      - name: Upload Zip Site Archive
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: dist/quickstart-site.zip
+          asset_name: quickstart-site.zip
+          asset_content_type: application/zip
+      - name: Upload Tar Site Archive
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: dist/quickstart-site.tar.gz
+          asset_name: quickstart-site.tar.gz
+          asset_content_type: application/gzip
+  documentation:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - name: Install Dependencies
+        run: npm ci
+      - name: Build Websites
+        run: npm run build
+      - name: Prepare for Deployment
+        run: |
+          echo > dist/doc/.nojekyll
+          cp --recursive dist/demo dist/doc
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/doc
