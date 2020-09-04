@@ -16,9 +16,13 @@
           {{- .LinkTitle -}}
         </a>
       {{ end }}
-      <div class="posts-single-summary">
-        {{ .Summary }}
-      </div>
+      <p class="posts-single-summary">
+        {{ with .Params.description }}
+        {{ . | htmlUnescape | plainify }}
+        {{ else }}
+        {{ .Summary | htmlUnescape | plainify }}
+        {{ end }}
+      </p>
     </div>
     {{ end }}
   </div>
