@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://amitkummer.github.io/webpack-mdnb/categories/</loc>
   </url>
   
   <url>
-    <loc>/guide/getting-started/</loc>
+    <loc>https://amitkummer.github.io/webpack-mdnb/guide/getting-started/</loc>
   </url>
   
   <url>
-    <loc>/guide/</loc>
+    <loc>https://amitkummer.github.io/webpack-mdnb/guide/</loc>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://amitkummer.github.io/webpack-mdnb/</loc>
   </url>
   
   <url>
-    <loc>/guide/scss-files/</loc>
+    <loc>https://amitkummer.github.io/webpack-mdnb/guide/scss-files/</loc>
   </url>
   
   <url>
-    <loc>/categories/user-guides/</loc>
+    <loc>https://amitkummer.github.io/webpack-mdnb/categories/user-guides/</loc>
   </url>
   
 </urlset>
