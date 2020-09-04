@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>text on Hugo Themes</title>
-    <link>https://amitkummer.github.io/webpack-mdnb/tags/text/</link>
+    <link>https://amitkummer.github.io/webpack-mdnb/demo/tags/text/</link>
     <description>Recent content in text on Hugo Themes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://amitkummer.github.io/webpack-mdnb/tags/text/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://amitkummer.github.io/webpack-mdnb/demo/tags/text/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Placeholder Text</title>
-      <link>https://amitkummer.github.io/webpack-mdnb/post-copy/placeholder-text/</link>
+      <link>https://amitkummer.github.io/webpack-mdnb/demo/post-copy/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://amitkummer.github.io/webpack-mdnb/post-copy/placeholder-text/</guid>
+      <guid>https://amitkummer.github.io/webpack-mdnb/demo/post-copy/placeholder-text/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de
 pectora summo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Placeholder Text</title>
-      <link>https://amitkummer.github.io/webpack-mdnb/post/placeholder-text/</link>
+      <link>https://amitkummer.github.io/webpack-mdnb/demo/post/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://amitkummer.github.io/webpack-mdnb/post/placeholder-text/</guid>
+      <guid>https://amitkummer.github.io/webpack-mdnb/demo/post/placeholder-text/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de
 pectora summo.&lt;/p&gt;</description>
     </item>
