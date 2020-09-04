@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
+    <title>Getting Started - webpack-mdnb</title>
+    
+
+
+<link rel="stylesheet" href="/main.css">
+
+
+    
+<meta name="description" content="Example documentation guide.">
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Getting Started",
+    "author": {
+        "@type": "Person",
+        "name": "Hugo Theme Pack Contributors"
+    },
+    "wordCount":  132 ,
+    "isAccessibleForFree": "true",
+    "license": "#",
+    "description": "Example documentation guide."
+}
+</script>
+
+    
+
+<style>
+:root {
+    --color-accent-100: hsl(350, 30%, 85%);
+    --color-accent-200: hsl(350, 33%, 82%);
+    --color-accent-300: hsl(350, 35%, 80%);
+    --color-accent-400: hsl(350, 60%, 50%);
+    --color-accent-500: hsl(350, 60%, 46%);
+    --color-accent-600: hsl(350, 60%, 43%);
+    --color-background-100: hsl(340, 14%, 92%);
+    --color-background-200: hsl(340, 14%, 92%);
+    --color-background-300: hsl(340, 16%, 90%);
+    --color-background-400: hsl(340, 18%, 88%);
+    --color-background-900: hsl(340, 15%, 86%);
+    --color-highlight-background: hsl(240, 13%, 14%);
+    --color-highlight-comment: hsl(250, 25%, 55%);
+    --color-highlight-literal: hsl(250, 80%, 70%);
+    --color-highlight-operator: hsl(330, 95%, 75%);
+    --color-highlight-special: hsl(180, 75%, 55%);
+    --color-highlight-text: hsl(240, 35%, 99%);
+    --color-primary-400: hsl(240, 30%, 59%);
+    --color-primary-500: hsl(240, 30%, 54%);
+    --color-primary-600: hsl(240, 30%, 51%);
+    --color-text-100: hsla(0, 0%, 0%, 0.7);
+    --color-text-200: hsla(0, 0%, 100%, 0.85);
+    --color-text-300: hsl(350, 60%, 50%);
+    --color-text-400: hsl(350, 60%, 46%);
+    --color-text-500: hsl(350, 60%, 43%);
+    --color-text-700: hsla(0, 0%, 0%, 0.65);
+    --color-text-800: hsla(0, 0%, 0%, 0.7);
+    --color-text-900: hsla(0, 0%, 0%, 0.75);
+    }
+</style>
+
+
+    
+</head>
+
+<body>
+    
+<div>
+    <header class="navbar">
+        <a class="navbar-logo-link" href="">
+            
+            <h1 class="navbar-logo-title">
+                webpack-mdnb
+            </h1>
+        </a>
+        
+        
+        <span class="navbar-spacer"></span>
+        <nav>
+            <ul class="navbar-navigation">
+                
+                <li>
+                <a href="/guide/" class="navbar-navigation-item">
+                    Guides
+                </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+</div>
+
+<main class="l-single">
+    <aside class="toc l-single-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#content-management">Content Management</a>
+      <ul>
+        <li><a href="#categories-and-tags">Categories and Tags</a></li>
+        <li><a href="#about-section">About Section</a></li>
+      </ul>
+    </li>
+    <li><a href="#project-commands">Project Commands</a></li>
+  </ul>
+</nav>
+    </aside>
+    
+    <article class="article l-single-article">
+        <nav>
+            <ul class="article-breadcrumbs">
+                <li class="article-breadcrumbs-item">
+                    <a href="guide">
+                        Guides
+                    </a>
+                </li>
+                <li class="article-breadcrumbs-item">
+                    <a href="guide#user-guides">
+                        User Guides
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="article-title">
+            Getting Started
+        </h1>
+        <section class="article-content">
+            <h2 id="content-management">Content Management</h2>
+<p>Posts should be written with Markdown only. They should contain the following front matter options:</p>
+<ul>
+<li><em>title</em>: serves as the post&rsquo;s name across the site</li>
+<li><em>date</em>: displayed in few places around the site, and also used for sorting posts display order.</li>
+</ul>
+<h3 id="categories-and-tags">Categories and Tags</h3>
+<p>&lsquo;Categories&rsquo; is the only taxonomy which is displayed in the site. Each post in the list-page has two categories displayed.</p>
+<h3 id="about-section">About Section</h3>
+<p>To enable the about section in the footer, simply create in the root content directory a <code>about.md</code> file with the text inside and nothing more.</p>
+<p>After this an &lsquo;about&rsquo; section in the footer should appear with your custom content.</p>
+<h2 id="project-commands">Project Commands</h2>
+<p>Running the theme&rsquo;s documentation dev-server:</p>
+<pre><code>npm run dev:doc
+</code></pre><p>Running the theme&rsquo;s Hugo dev server:</p>
+<pre><code>npm run dev
+</code></pre><p>Running the automatic formatting:</p>
+<pre><code>npm run format
+</code></pre>
+        </section>
+    </article></main>
+    <footer class="footer">
+    <div class="footer-container l-offset l-offset-start">
+        <section class="content content-dark">
+            
+            <h1 class="content-title">
+                About
+            </h1>
+            
+            
+            <p class="content-text">
+                    Hugo Theme Pack is project boilerplate for building Hugo themes with Webpack.
+    
+            </p>
+            
+        </section>
+        
+        <nav>
+            <ul class="lowernav">
+                
+                <li>
+                    <a href="/" class="lowernav-item">
+                        Home
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/guide/" class="lowernav-item">
+                        Guides
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </div>
+</footer>
+
+    <script src="/main.js"></script>
+</body>
+</html>

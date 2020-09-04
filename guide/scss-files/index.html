@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
+    <title>Theme SCSS files reference - webpack-mdnb</title>
+    
+
+
+<link rel="stylesheet" href="/main.css">
+
+
+    
+<meta name="description" content="Short explanation about each scss file and the overall design.">
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Theme SCSS files reference",
+    "author": {
+        "@type": "Person",
+        "name": "Hugo Theme Pack Contributors"
+    },
+    "wordCount":  222 ,
+    "isAccessibleForFree": "true",
+    "license": "#",
+    "description": "Short explanation about each scss file and the overall design."
+}
+</script>
+
+    
+
+<style>
+:root {
+    --color-accent-100: hsl(350, 30%, 85%);
+    --color-accent-200: hsl(350, 33%, 82%);
+    --color-accent-300: hsl(350, 35%, 80%);
+    --color-accent-400: hsl(350, 60%, 50%);
+    --color-accent-500: hsl(350, 60%, 46%);
+    --color-accent-600: hsl(350, 60%, 43%);
+    --color-background-100: hsl(340, 14%, 92%);
+    --color-background-200: hsl(340, 14%, 92%);
+    --color-background-300: hsl(340, 16%, 90%);
+    --color-background-400: hsl(340, 18%, 88%);
+    --color-background-900: hsl(340, 15%, 86%);
+    --color-highlight-background: hsl(240, 13%, 14%);
+    --color-highlight-comment: hsl(250, 25%, 55%);
+    --color-highlight-literal: hsl(250, 80%, 70%);
+    --color-highlight-operator: hsl(330, 95%, 75%);
+    --color-highlight-special: hsl(180, 75%, 55%);
+    --color-highlight-text: hsl(240, 35%, 99%);
+    --color-primary-400: hsl(240, 30%, 59%);
+    --color-primary-500: hsl(240, 30%, 54%);
+    --color-primary-600: hsl(240, 30%, 51%);
+    --color-text-100: hsla(0, 0%, 0%, 0.7);
+    --color-text-200: hsla(0, 0%, 100%, 0.85);
+    --color-text-300: hsl(350, 60%, 50%);
+    --color-text-400: hsl(350, 60%, 46%);
+    --color-text-500: hsl(350, 60%, 43%);
+    --color-text-700: hsla(0, 0%, 0%, 0.65);
+    --color-text-800: hsla(0, 0%, 0%, 0.7);
+    --color-text-900: hsla(0, 0%, 0%, 0.75);
+    }
+</style>
+
+
+    
+</head>
+
+<body>
+    
+<div>
+    <header class="navbar">
+        <a class="navbar-logo-link" href="">
+            
+            <h1 class="navbar-logo-title">
+                webpack-mdnb
+            </h1>
+        </a>
+        
+        
+        <span class="navbar-spacer"></span>
+        <nav>
+            <ul class="navbar-navigation">
+                
+                <li>
+                <a href="/guide/" class="navbar-navigation-item">
+                    Guides
+                </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+</div>
+
+<main class="l-single">
+    <aside class="toc l-single-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#scss-files-reference">SCSS Files Reference</a>
+      <ul>
+        <li><a href="#layouts">Layouts</a></li>
+        <li><a href="#mixins">Mixins</a></li>
+        <li><a href="#modules">Modules</a></li>
+        <li><a href="#theme">Theme</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </aside>
+    
+    <article class="article l-single-article">
+        <nav>
+            <ul class="article-breadcrumbs">
+                <li class="article-breadcrumbs-item">
+                    <a href="guide">
+                        Guides
+                    </a>
+                </li>
+                <li class="article-breadcrumbs-item">
+                    <a href="guide#user-guides">
+                        User Guides
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="article-title">
+            Theme SCSS files reference
+        </h1>
+        <section class="article-content">
+            <p>The theme&rsquo;s style is written entirely with just SCSS which is then transpiled to CSS using Webpack.</p>
+<p>All files try to follow SMACSS idioms and are thus seperated into 5 folders:</p>
+<ul>
+<li><strong>base</strong> - global settings.</li>
+<li><strong>layout</strong> - style that controls the site layout.</li>
+<li><strong>mixins</strong> - useful mixins.</li>
+<li><strong>modules</strong> - site components for example the navbar, footer, header.</li>
+<li><strong>theme</strong> - files that are used to create a system of predefined values.</li>
+</ul>
+<h2 id="scss-files-reference">SCSS Files Reference</h2>
+<h3 id="layouts">Layouts</h3>
+<h4 id="container">container</h4>
+<p>Virtual selector that is extended in the site&rsquo;s navbar, content and header sections to position their child elements.</p>
+<h4 id="pagewrapper">pagewrapper</h4>
+<p>Flexbox that is used for the entire page and makes the header and footer float up and down respectively while the page content flex-grows&rsquo;s to min-height of 850px~.</p>
+<h3 id="mixins">Mixins</h3>
+<h4 id="responsive-block">responsive-block</h4>
+<p>Stolen from Lander. Used for custom behavior that depends on the viewport size.</p>
+<h3 id="modules">Modules</h3>
+<h4 id="sectionview-and-section">sectionview and section</h4>
+<p>Homepage list of sections style. Sectionview is a wrapper for section. (idiomatic)?</p>
+<h4 id="post-list">post-list</h4>
+<p>List page style for everything including list of posts of current section.</p>
+<h4 id="article">article</h4>
+<p>Single page style.</p>
+<h4 id="footer">footer</h4>
+<p>Style for site footer.</p>
+<h4 id="header">header</h4>
+<p>Style for site header.</p>
+<h3 id="theme">Theme</h3>
+<h4 id="headings">headings</h4>
+<p>Default font sizes of headings.</p>
+<h4 id="italics">italics</h4>
+<p>Collection of font oblique values.</p>
+<h4 id="screens">screens</h4>
+<p>Breakpoints and container width for mobile, tablet and desktop.</p>
+<h4 id="spaces">spaces</h4>
+<p>Collection of font margin sizes.</p>
+<h4 id="type">type</h4>
+<p>Collection of font sizes. (Stolen from Lander?)</p>
+<h4 id="weights">weights</h4>
+<p>Collection of font weights.</p>
+
+        </section>
+    </article></main>
+    <footer class="footer">
+    <div class="footer-container l-offset l-offset-start">
+        <section class="content content-dark">
+            
+            <h1 class="content-title">
+                About
+            </h1>
+            
+            
+            <p class="content-text">
+                    Hugo Theme Pack is project boilerplate for building Hugo themes with Webpack.
+    
+            </p>
+            
+        </section>
+        
+        <nav>
+            <ul class="lowernav">
+                
+                <li>
+                    <a href="/" class="lowernav-item">
+                        Home
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/guide/" class="lowernav-item">
+                        Guides
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </div>
+</footer>
+
+    <script src="/main.js"></script>
+</body>
+</html>
