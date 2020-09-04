@@ -1,7 +1,7 @@
 ---
-title: "cool resources"
-date: "2020-08-24"
-description: "js programming related resources"
+title: 'cool resources'
+date: '2020-08-24'
+description: 'js programming related resources'
 ---
 
 Here is a list of some cool resources for learning Javascript. It features books, cool blog posts, and everything in between.
