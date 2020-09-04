@@ -1,4 +1,4 @@
-baseURL = "https://amitkummer.github.io/webpack-mdnb/"
+baseURL = "https://amitkummer.github.io/webpack-mdnb/demo"
 title = "Hugo Themes"
 author = "Steve Francia"
 copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
