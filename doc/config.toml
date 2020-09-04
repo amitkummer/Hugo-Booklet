@@ -1,4 +1,4 @@
-baseURL = "https://amitkummer.github.io/webpack-mdnb/doc"
+baseURL = "https://amitkummer.github.io/webpack-mdnb/"
 title = "webpack-mdnb"
 languageCode = "en"
 DefaultContentLanguage = "en"
