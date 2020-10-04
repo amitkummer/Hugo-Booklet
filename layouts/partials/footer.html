@@ -23,9 +23,13 @@
       <a href="{{ .CurrentSection.Permalink }}" class="footer-navigation-links-item">
         {{ .CurrentSection.Title }}
       </a>
-      <div class="footer-navigation-links-item">
-        Github
-      </a>
+      <div>
+        {{ with .Site.Params.footer.github }}
+        <a href="{{ . }}" class="footer-navigation-links-item">
+          Github
+        </a>
+        {{ end }}
+      </div>
     </nav>
   </div>
 </footer>
