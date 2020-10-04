@@ -20,9 +20,11 @@
       <a href="{{ .Site.Home.Permalink }}" class="footer-navigation-links-item">
         Home
       </a>
+      {{ if ne .CurrentSection.Title "Home" }}
       <a href="{{ .CurrentSection.Permalink }}" class="footer-navigation-links-item">
-        {{ .CurrentSection.Title }}
+        {{ .Title }}
       </a>
+      {{ end }}
       <div>
         {{ with .Site.Params.footer.github }}
         <a href="{{ . }}" class="footer-navigation-links-item">
