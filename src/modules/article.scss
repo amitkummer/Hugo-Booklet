@@ -5,11 +5,12 @@
 
   &-title {
     margin: 0;
+    margin-bottom: var(--space-200);
     padding: 0;
   }
 
   &-meta {
-    margin-bottom: var(--space-300);
+    margin-bottom: var(--space-400);
 
     &-date {
       margin-right: var(--space-200);
