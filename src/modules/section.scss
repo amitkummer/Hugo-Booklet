@@ -3,15 +3,19 @@
   max-width: 400px;
 
   &-title {
-    font-size: var(--type-size-300);
-    font-weight: var(--type-weight-500);
-    margin-bottom: 0;
-    text-decoration: none;
+    margin-bottom: var(--space-200);
+    
+    &-active {
+      font-size: var(--type-size-300);
+      font-weight: var(--type-weight-500);
+      text-decoration: none;
+    }
   }
 
   &-summary {
     font-weight: 300;
     margin-top: 0;
+    margin-bottom: var(--space-300);
   }
 
   &-posts {

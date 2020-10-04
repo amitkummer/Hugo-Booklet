@@ -2,9 +2,11 @@
 <div class="l-container">
   {{ range .Sections }}
   <div class="section">
-    <a href="{{ .Permalink }}" class="section-title">
-      {{ .Title }}
-    </a>
+    <div class="section-title">
+      <a href="{{ .Permalink }}" class="section-title-active">
+        {{ .Title }}
+      </a>
+    </div>
     <p class="section-summary">
       {{ .Summary }}
     </p>
