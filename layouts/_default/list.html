@@ -23,6 +23,11 @@
         {{ .Summary | htmlUnescape | plainify }}
         {{ end }}
       </p>
+      <div class="posts-single-readmore">
+        <a href="{{ .Permalink }}">
+          read more
+        </a>
+      </div>
     </div>
     {{ end }}
   </div>
