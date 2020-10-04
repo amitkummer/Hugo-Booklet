@@ -4,7 +4,7 @@
 
   &-title {
     margin-bottom: var(--space-200);
-    
+
     &-active {
       font-size: var(--type-size-300);
       font-weight: var(--type-weight-500);
@@ -14,8 +14,8 @@
 
   &-summary {
     font-weight: 300;
-    margin-top: 0;
     margin-bottom: var(--space-300);
+    margin-top: 0;
   }
 
   &-posts {
