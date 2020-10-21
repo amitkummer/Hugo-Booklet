@@ -1,5 +1,9 @@
 @mixin single-page-margins {
-  // Lists
+  hr {
+    margin-bottom: var(--space-100);
+    margin-top: var(--space-100);
+  }
+
   ol, ul {
     margin-bottom: var(--space-200);
     margin-top: var(--space-100);
@@ -9,9 +13,13 @@
     margin-bottom: var(--space-100);
   }
 
-  // Misc. elements
   p {
     margin-bottom: var(--space-300);
     margin-top: var(--space-200);
+  }
+
+  pre {
+    margin-bottom: var(--space-500);
+    margin-top: var(--space-400);
   }
 }
