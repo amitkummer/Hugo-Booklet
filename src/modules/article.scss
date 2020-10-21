@@ -1,9 +1,11 @@
 .article {
-  @include single-page-margins;
-
   color: var(--color-accent-f500);
   margin-bottom: var(--space-600);
   max-width: 600px;
+
+  &-content {
+    @include single-page-margins;
+  }
 
   &-title {
     margin: 0;
