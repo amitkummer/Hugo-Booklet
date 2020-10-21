@@ -1,26 +1,17 @@
 @mixin single-page-margins {
-  h1 {
-    margin-bottom: var(--space-400);
-    margin-top: var(--space-500);
+  // Lists
+  ol, ul {
+    margin-bottom: var(--space-200);
+    margin-top: var(--space-100);
   }
-  h2 {
+
+  li {
+    margin-bottom: var(--space-100);
+  }
+
+  // Misc. elements
+  p {
     margin-bottom: var(--space-300);
-    margin-top: var(--space-400);
-  }
-  h3 {
-    margin-bottom: var(--space-300);
-    margin-top: var(--space-400);
-  }
-  h4 {
-    margin-bottom: var(--space-200);
-    margin-top: var(--space-300);
-  }
-  h5 {
-    margin-bottom: var(--space-200);
-    margin-top: var(--space-300);
-  }
-  h6 {
-    margin-bottom: var(--space-200);
-    margin-top: var(--space-300);
+    margin-top: var(--space-200);
   }
 }
