@@ -5,13 +5,9 @@ html {
 
 /* Remove default margin */
 body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+hr,
 p,
+pre,
 ul,
 ol,
 li,
@@ -24,6 +20,8 @@ dd {
 }
 
 body {
+  // TODO: check whi line-height of 0 makes lists look wierd.
+  line-height: 1.43rem;
   min-height: 100%;
 }
 
