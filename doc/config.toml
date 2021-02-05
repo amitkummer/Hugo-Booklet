@@ -1,5 +1,5 @@
-baseURL = "https://amitkummer.github.io/webpack-mdnb/"
-title = "webpack-mdnb"
+baseURL = "https://amitkummer.github.io/hugo-booklet/"
+title = "hugo-booklet"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true

@@ -1,4 +1,4 @@
-baseURL = "https://amitkummer.github.io/webpack-mdnb/demo"
+baseURL = "https://amitkummer.github.io/hugo-booklet/demo"
 title = "Hugo Themes"
 author = "Steve Francia"
 copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
@@ -15,7 +15,7 @@ theme = "mdnb"
   [params.footer]
     title = "About"
     text = "Woah! There is a customizeable 'about' section. This section should be about 2 -3 secntences long but the theme handles 'about' sections of any length just right."
-    github = "https://github.com/amitkummer/webpack-mdnb"
+    github = "https://github.com/amitkummer/hugo-booklet"
 
 [menu]
 
