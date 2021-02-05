@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hugo Themes</title>
-    <link>https://amitkummer.github.io/webpack-mdnb/demo/tags/</link>
+    <link>https://amitkummer.github.io/hugo-booklet/demo/tags/</link>
     <description>Recent content in Tags on Hugo Themes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://amitkummer.github.io/webpack-mdnb/demo/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://amitkummer.github.io/hugo-booklet/demo/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>css</title>
-      <link>https://amitkummer.github.io/webpack-mdnb/demo/tags/css/</link>
+      <link>https://amitkummer.github.io/hugo-booklet/demo/tags/css/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://amitkummer.github.io/webpack-mdnb/demo/tags/css/</guid>
+      <guid>https://amitkummer.github.io/hugo-booklet/demo/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>https://amitkummer.github.io/webpack-mdnb/demo/tags/html/</link>
+      <link>https://amitkummer.github.io/hugo-booklet/demo/tags/html/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://amitkummer.github.io/webpack-mdnb/demo/tags/html/</guid>
+      <guid>https://amitkummer.github.io/hugo-booklet/demo/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https://amitkummer.github.io/webpack-mdnb/demo/tags/markdown/</link>
+      <link>https://amitkummer.github.io/hugo-booklet/demo/tags/markdown/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://amitkummer.github.io/webpack-mdnb/demo/tags/markdown/</guid>
+      <guid>https://amitkummer.github.io/hugo-booklet/demo/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://amitkummer.github.io/webpack-mdnb/demo/tags/themes/</link>
+      <link>https://amitkummer.github.io/hugo-booklet/demo/tags/themes/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://amitkummer.github.io/webpack-mdnb/demo/tags/themes/</guid>
+      <guid>https://amitkummer.github.io/hugo-booklet/demo/tags/themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>privacy</title>
-      <link>https://amitkummer.github.io/webpack-mdnb/demo/tags/privacy/</link>
+      <link>https://amitkummer.github.io/hugo-booklet/demo/tags/privacy/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://amitkummer.github.io/webpack-mdnb/demo/tags/privacy/</guid>
+      <guid>https://amitkummer.github.io/hugo-booklet/demo/tags/privacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>https://amitkummer.github.io/webpack-mdnb/demo/tags/shortcodes/</link>
+      <link>https://amitkummer.github.io/hugo-booklet/demo/tags/shortcodes/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://amitkummer.github.io/webpack-mdnb/demo/tags/shortcodes/</guid>
+      <guid>https://amitkummer.github.io/hugo-booklet/demo/tags/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>text</title>
-      <link>https://amitkummer.github.io/webpack-mdnb/demo/tags/text/</link>
+      <link>https://amitkummer.github.io/hugo-booklet/demo/tags/text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://amitkummer.github.io/webpack-mdnb/demo/tags/text/</guid>
+      <guid>https://amitkummer.github.io/hugo-booklet/demo/tags/text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emoji</title>
-      <link>https://amitkummer.github.io/webpack-mdnb/demo/tags/emoji/</link>
+      <link>https://amitkummer.github.io/hugo-booklet/demo/tags/emoji/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://amitkummer.github.io/webpack-mdnb/demo/tags/emoji/</guid>
+      <guid>https://amitkummer.github.io/hugo-booklet/demo/tags/emoji/</guid>
       <description></description>
     </item>
     
     <item>
       <title>index</title>
-      <link>https://amitkummer.github.io/webpack-mdnb/demo/tags/index/</link>
+      <link>https://amitkummer.github.io/hugo-booklet/demo/tags/index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://amitkummer.github.io/webpack-mdnb/demo/tags/index/</guid>
+      <guid>https://amitkummer.github.io/hugo-booklet/demo/tags/index/</guid>
       <description></description>
     </item>
     

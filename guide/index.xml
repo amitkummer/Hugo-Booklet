@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Guides on webpack-mdnb</title>
-    <link>https://amitkummer.github.io/webpack-mdnb/guide/</link>
-    <description>Recent content in Guides on webpack-mdnb</description>
+    <title>Guides on hugo-booklet</title>
+    <link>https://amitkummer.github.io/hugo-booklet/guide/</link>
+    <description>Recent content in Guides on hugo-booklet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://amitkummer.github.io/webpack-mdnb/guide/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://amitkummer.github.io/hugo-booklet/guide/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Getting Started</title>
-      <link>https://amitkummer.github.io/webpack-mdnb/guide/getting-started/</link>
+      <link>https://amitkummer.github.io/hugo-booklet/guide/getting-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://amitkummer.github.io/webpack-mdnb/guide/getting-started/</guid>
+      <guid>https://amitkummer.github.io/hugo-booklet/guide/getting-started/</guid>
       <description>Content Management Posts should be written with Markdown only. They should contain the following front matter options:
  title: serves as the post&amp;rsquo;s name across the site date: displayed in few places around the site, and also used for sorting posts display order.  Categories and Tags &amp;lsquo;Categories&amp;rsquo; is the only taxonomy which is displayed in the site. Each post in the list-page has two categories displayed.
 About Section To enable the about section in the footer, simply create in the root content directory a about.</description>
@@ -23,10 +23,10 @@ About Section To enable the about section in the footer, simply create in the ro
     
     <item>
       <title>Theme SCSS files reference</title>
-      <link>https://amitkummer.github.io/webpack-mdnb/guide/scss-files/</link>
+      <link>https://amitkummer.github.io/hugo-booklet/guide/scss-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://amitkummer.github.io/webpack-mdnb/guide/scss-files/</guid>
+      <guid>https://amitkummer.github.io/hugo-booklet/guide/scss-files/</guid>
       <description>The theme&amp;rsquo;s style is written entirely with just SCSS which is then transpiled to CSS using Webpack.
 All files try to follow SMACSS idioms and are thus seperated into 5 folders:
  base - global settings. layout - style that controls the site layout. mixins - useful mixins. modules - site components for example the navbar, footer, header. theme - files that are used to create a system of predefined values.</description>
